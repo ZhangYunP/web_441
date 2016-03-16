@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>欢迎登录本网站，本站地址xxx.xxxx.com,联系方式xxxxxxxxx</title>
+	<link rel="stylesheet" type="text/css" href="../../img/css/reg.css" >
+	<link rel="stylesheet" type="text/css" href="../../img/css/nav.css" media="screen and (min-width:1080px)">
+	<link rel="stylesheet" type="text/css" href="../../img/css/navresponse.css" media="screen and (max-width:1080px)">
+	<link rel="stylesheet" type="text/css" href="../../img/util/iconfont/iconfont.css">
+	
+
+</head>
+<body>
+      <div class="regpage">
+      	<div id="navbox" class="navbox">
+			<div id="navbar" class="navbar">
+				<ul id="mynav" class="mynav clearfix">
+					<li class="navimg fl"><img src="../../img/images/logo.png" alt="logo" width="20" height="20" class="navlogo"></li>
+					<li class="navtitle fl"><a href="../../admin.php" >首页<span class="moveline"></span></a></li>
+					<li class="navsearchbox fr">
+						<form class="search-form" action="" method="get">
+							<span class="searchimg" id="searchimg"><img src="../../img/images/search.png" alt="search"></span>
+	 						<input type="text" class="searchtext" name="q" autocomplete="off"/>
+	 						<input type="submit" class="searchbutton" value="搜索" />
+	 					</form>
+	 				</li>
+				</ul>
+			</div>
+		</div>
+		<div id="regbox" class="regbox">
+			<div id="reghead" class="reghead">
+				<h1>员工通道入口</h1>
+				<span class="headline"></span>
+			</div>
+			<div id="regcontent" class="regcontent">
+			<form action="../../admin.php?controller=staff&method=login" method="post" class="regform" id="regform" onsubmit="return checkform()">
+				<div id="regname" class="regname">
+					<label for="name" class="name">用户ID</label>&nbsp;<span id="star">*</span>
+					<br>
+					<input type="text" name="name" id="name" class="nameinput" placeholder="请输入员工ID" onfocus="clearTips(1)" onblur="checkname()" autocomplete="off"></input><span class="inputicon"><i class="iconfont icon-user"></i></span>
+					<span id="nameclose"  class="ajaxtest" style="display:none;"><i class="iconfont icon-facecry"></i></span>
+					<p id="nametips" class="tips" ></p>
+				</div>
+				
+				<div id="regpwd" class="regpwd">
+					<label for="pwd" class="pwd">密码</label>&nbsp;<span id="star">*</span>
+					<br>
+					<input type="password" name="pwd" id="pwd" class="pwdinput" placeholder="请输入你的密码" onpaste="return false" oncontextmenu="return false" onfocus="clearTips(2)" onblur="checkpwd()" autocomplete="off"></input><span class="inputicon"><i class="iconfont icon-iconfontweibiaoti10151"></i></span><span id="pwdclose"  class="ajaxtest" style="display: none;"><i class="iconfont icon-facecry"></i></span>
+					<p id="pwdtips" class="tips" ></p>
+				</div>
+				
+		
+				<div id="regvcode" class="regvcode">
+					<label for="vcode" class="vcode">确定你不是机器人</label>&nbsp;<span id="star">*</span>
+					<br>
+					<input type="text" name="vcode" id="vcode" class="vcodeinput" placeholder="请输入验证码" onfocus="clearTips(5)" onblur="checkvcode()" autocomplete="off"></input><span class="inputicon"><i class="iconfont icon-user2"></i></span>
+					<span id="vcodeclose"  class="ajaxtest" style="display: none;"><i class="iconfont icon-facecry"></i></span>
+					<br>
+					<a href="javascript:void(0)" class="imagecode"><img  src="../../admin.php?controller=index&method=imgcode" id="vcodeimg" style="width:80;height:24px;border:0;" onclick="changecode();"></image></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vm">看不清，换一张</span>
+					<p id="vcodetips" class="tips" ></p>
+					
+				</div>
+
+				<div class="remberbox" id="remberbox"><span class="agre" id="agre"><i class="iconfont"></i></span><span class="reword">记住我（1个月内有效）</span></div>
+				
+				<div id="regsubmit" class="regsubmit">
+					<input type="submit" name="submit" class="submit" value="登&nbsp;&nbsp;&nbsp;&nbsp;录" >
+				</div>
+				
+			</form>
+				<div class="forgetbox" ><a href="./staffforget.html">忘记密码？/修改密码</a><div class="pwdtips" ><em>只有本公司员工方能修改密码！</em><span></span></div>
+</div>
+			</div>
+		</div>
+		<div class="footbox" id="footbox">
+			<div class="copyright" id="copyright">
+				<span><em>©</em>2015 九江中船仪表有限责任公司 </span>
+			</div>
+		</div>
+      </div>
+		
+		<script type="text/javascript" src="../../img/js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../../img/js/login.js"></script>
+		
+</body>
+</html>

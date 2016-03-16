@@ -1,0 +1,74 @@
+.navbox{
+	padding: 4px;
+	background-color: #f5f5f5;
+}
+.navbox .mynav{
+ 	padding: 2px;
+}
+.regpage .navbox .navbar .navtitle,.navlogin{
+	display: inline-block;
+	font-size: 16px;
+	margin-left: 30px;
+	height: 27px;
+	margin-top: 5px;
+	font-family: 'Microsoft Yahei', Simsun;
+}
+.navimg{
+	position: relative;
+}
+.navlogo{
+	position: absolute;
+	top: 6px;
+}
+.navlogin a{
+	text-decoration: none;
+	color: #BCC1C7;
+}
+.navtitle a{
+	text-decoration: none;
+	color: #BCC1C7;
+}
+
+ .navsearchbox{
+ 	display: none;
+}
+
+
+.navwx{
+	display: none;
+}
+
+.navtitle,.navlogin{
+	position: relative;
+}
+.moveline{
+	display: block;
+    position: absolute;
+    background: none;
+    height: 2px;
+    width: 0px;
+    left: -110%;
+    bottom: -7px;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+}
+.navtitle:hover a{
+	color: #7ecef1;
+}
+.navlogin:hover a{
+	color: #7ecef1;
+}
+
+.navtitle:hover .moveline{
+	background: #7ecef1;
+	width: 100%;
+    left: -2px;
+}
+.navlogin:hover .moveline{
+	background: #7ecef1;
+	width: 100%;
+    left: -2px;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>欢迎加入本站，本站将为你提高优质的服务，请记住本站地址:xxx.xxx.com,如有需要请联系我们，联系方式xxxxxxxxx</title>
+	<link rel="stylesheet" type="text/css" href="../../img/css/reg.css" >
+	<link rel="stylesheet" type="text/css" href="../../img/css/nav.css" media="screen and (min-width:1080px)">
+	<link rel="stylesheet" type="text/css" href="../../img/css/navresponse.css" media="screen and (max-width:1080px)">
+	<link rel="stylesheet" type="text/css" href="../../img/util/iconfont/iconfont.css">
+	
+</head>
+<body>
+      <div class="regpage">
+      	<div id="navbox" class="navbox">
+			<div id="navbar" class="navbar">
+				<ul id="mynav" class="mynav clearfix">
+					<li class="navimg fl"><img src="../../img/images/logo.png" alt="logo" width="20" height="20" class="navlogo"></li>
+					<li class="navtitle fl"><a href="../../admin.php" >首页<span class="moveline"></span></a></li>
+					<li class="navsearchbox fl">
+						<form class="search-form" action="" method="get">
+							<span class="searchimg" id="searchimg"><img src="../../img/images/search.png" alt="search"></span>
+	 						<input type="text" class="searchtext" name="q" autocomplete="off"/>
+	 						<input type="submit" class="searchbutton" value="搜索" />
+	 					</form>
+	 				</li>
+	 				<li class="navlogin fr"><a href="./login.html">登录&nbsp;<i class="iconfont icon-user1"></i><span class="moveline"></span></a></li>
+					<li class="navwx fr"><a href="javascript:void(0)"><i class="iconfont icon-weixin"></i>&nbsp;微信二维码<span class="moveline"></span></a><div class="wxqrcode"  style="display:none;"><span class="cart"></span><img src="../../img/images/helloqr.png"></div></li>
+				</ul>
+			</div>
+		</div>
+		<iframe src="./agreereg.html" id="agreereg" name="agreereg" frameborder="0" width="500px" height="500px" style="border-radius:15px; border:2px solid #cccccc; position:absolute;left:400px; top:100px;display:none;z-index:9999;"></iframe>
+		<div id="mask" class="mask" style="display:none"></div>
+		<div id="regbox" class="regbox">
+			<div id="reghead" class="reghead">
+				<h1>注&nbsp;&nbsp;册</h1><span class="helpicon" ><img src="../../img/images/help.png" alt="帮助" width="20px" height="20px" id="helpimg"></span>
+				<div  style="display:none;" class="tooltips" id="tooltips">
+					<em>友情提示</em>
+					<br>
+					<p>用户名可用数字、字母、下划线的组合，且长度在6到12位之间<br>
+						密码不可以使用空格，只能使用数字及字母，长度在6到12位之间<br>
+						目前只有QQ和163邮箱可以通过验证，所以请使用QQ或者163邮箱
+					</p>
+					<span ></span>				
+				</div>
+				<span class="headline"></span>
+			</div>
+			<div id="regcontent" class="regcontent">
+			<form action="../../admin.php?controller=rg&method=reg" method="post" class="regform" id="regform" onsubmit="return checkform()">
+				<div id="regname" class="regname">
+					<label for="name" class="name">用户名</label>&nbsp;<span id="star">*</span>
+					<br>
+					<input type="text" name="name" id="name" class="nameinput" placeholder="请输入用户名" onfocus="clearTips(1)" onblur="checkname()" autocomplete="off"></input><span class="inputicon"><i class="iconfont icon-user"></i></span>
+					<span id="nameclose"  class="ajaxtest" style="display:none;"><i class="iconfont icon-facecry"></i></span>
+					<p id="nametips" class="tips" ></p>
+				</div>
+				
+				<div id="regpwd" class="regpwd">
+					<label for="pwd" class="pwd">密码</label>&nbsp;<span id="star">*</span>
+					<br>
+					<input type="password" name="pwd" id="pwd" class="pwdinput" placeholder="请输入注册密码" onpaste="return false" oncontextmenu="return false" onfocus="clearTips(2)" onblur="checkpwd()" autocomplete="off"></input><span class="inputicon"><i class="iconfont icon-iconfontweibiaoti10151"></i></span><span id="pwdclose"  class="ajaxtest" style="display: none;"><i class="iconfont icon-facecry"></i></span><div class="safeline" id="safeline" style="display:block"><span id="safeclass1" class="safeclass1"></span></div>
+				</div>
+				<div id="regpwd1" class="regpwd1">
+					<input type="password" name="pwd1" id="pwd1" class="pwd1input" placeholder="请再次输入密码" onpaste="return false" oncontextmenu="return false" onfocus="clearTips(3)" onblur="checkpwd1()" autocomplete="off"></input><span class="inputicon"><i class="iconfont icon-iconfontweibiaoti10151"></i></span>
+					<span id="pwd1close"  class="ajaxtest" style="display: none;"><i class="iconfont icon-facecry"></i></span><div class="safeline" id="safeline1" style="display:block"><span id="safeclass" class="safeclass"></span></div>
+					<p id="pwdtips" class="tips" ></p>
+
+				</div>
+				
+				<div id="regemail" class="regemail">
+					<label for="email" class="email">邮箱</label>&nbsp;<span id="star">*</span>
+					<br>
+					<input type="text" name="email" id="email" class="emailinput" placeholder="请输入邮箱" onfocus="clearTips(4)" onblur="checkemail()" autocomplete="off"></input><span class="inputicon"><i class="iconfont icon-email"></i></span>
+					<div class="auto-show" id="auto-show" style="display:none ;">
+					</div>
+					<span id="emailclose"  class="ajaxtest" style="display: none;"><i class="iconfont icon-facecry"></i></span>
+					<p id="emailtips" class="tips" ></p>
+				</div>
+				
+				<div id="regsex" class="regsex">
+					<label for="sex" class="sex">性别</label>&nbsp;<span id="star">*</span>
+					<br>
+					<input type="radio" name="sex" value="0" checked="checked">男</input>&nbsp;&nbsp;
+					<input type="radio" name="sex" value="1">女</input>&nbsp;&nbsp;
+					<input type="radio" name="sex" value="2">保密</input>
+				</div>
+				
+				<div id="regvcode" class="regvcode">
+					<label for="vcode" class="vcode">验证码</label>&nbsp;<span id="star">*</span>
+					<br>
+					<input type="text" name="vcode" id="vcode" class="vcodeinput" placeholder="请输入验证码" onfocus="clearTips(5)" onblur="checkvcode()" autocomplete="off"></input><span class="inputicon"><i class="iconfont icon-user2"></i></span>
+					<span id="vcodeclose"  class="ajaxtest" style="display: none;"><i class="iconfont icon-facecry"></i></span>
+					<br>
+					<a href="javascript:void(0)" class="imagecode"><img  src="../../admin.php?controller=rg&method=imgcode" id="vcodeimg" style="width:80;height:24px;border:0;" onclick="changecode();"></image></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vm">看不清，换一张</span>
+					<p id="vcodetips" class="tips" ></p>
+					
+				</div>
+				<div id="agreebox" class="agreebox">
+					<span id="agcheck"><i class="iconfont icon-toggleon"></i></span><a name="#123" target="agreereg" id="ag">同意注册条款</a>
+				</div>
+				
+				<div id="regsubmit" class="regsubmit">
+					<input type="submit" name="submit" class="submit" id="submit" value="注&nbsp;&nbsp;&nbsp;&nbsp;册" >
+				</div>
+			</form>
+
+			</div>
+		</div>
+		<div class="footbox" id="footbox">
+			<div class="copyright" id="copyright">
+				<span><em>©</em>2015 九江中船仪表有限责任公司 </span>
+			</div>
+			
+		</div>
+      </div>
+		
+			<script type="text/javascript" src="../../img/js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../../img/js/reg.js"></script>
+		<script type="text/javascript" src="../../img/js/email.js"></script>
+		<script type="text/javascript" src="../../img/js/ga.js"></script>
+		
+		
+</body>
+</html>

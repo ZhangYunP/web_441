@@ -1,0 +1,6 @@
+a,img{border:0;}
+/* side */
+.side{position:fixed;width:54px;height:275px;left:0;top:214px;z-index:100;}
+.side ul li{width:54px;height:54px;float:right;position:relative;border-bottom:1px solid #444;}
+.side ul li .sidebox{position:absolute;width:54px;height:54px;top:0;left:0;transition:all 0.3s;background:#000;opacity:0.8;filter:Alpha(opacity=80);color:#fff;font:14px/54px "微软雅黑";overflow:hidden;}
+.side ul li img{float:left;}

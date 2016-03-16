@@ -1,0 +1,20 @@
+<?php
+	$paths = array(
+		'function/mvc.func.php',
+		'function/image.func.php',
+		'function/page.func.php',
+		'function/string.func.php',
+		'function/upload.func.php',
+	    'function/class.func.php',
+	    'function/getip.func.php',
+		'libs/core/DB.class.php',
+		'libs/core/VIEW.class.php',
+		'libs/db/mysql.class.php',
+		'libs/mailer/phpmailer.class.php',
+		'libs/mailer/smtp.class.php',
+		'libs/view/Smarty/Smarty.class.php',
+	    'libs/cache/cache.class.php',
+	    'libs/phpqrcode/phpqrcode.class.php',
+	    'libs/PHPWord/PHPWord.class.php'
+	);
+?>

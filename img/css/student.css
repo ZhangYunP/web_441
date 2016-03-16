@@ -1,0 +1,342 @@
+/*初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body {  font-size:14px; font-family: '微软雅黑'}
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { text-decoration:none; }
+a:hover { text-decoration:none; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;}
+input:focus {
+    outline:none;
+} 
+/* css common */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+.fr{float: right;}
+.fl{float: left;}
+
+.navtitle{
+	margin-left: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.rank{
+	margin: 20px 0px 0px 120px;
+	width: 287px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px 20px;
+	border:1px solid transparent;
+	margin-bottom: 20px;
+	background-color: white;
+	box-shadow: 0 0 5px 1px #ddd;
+
+}
+
+.name{
+	font-size: 27px;
+	color: #cccccc;
+	margin-left: 5px;
+	font-family: "微软雅黑";
+}
+.navbar2{
+	margin-top: 10px;
+	position: relative;
+	height: 80px;
+	padding-bottom: 10px;
+	width: 100%;
+	
+}
+.one{
+	position: relative;
+}
+#list{
+	margin-left: 110px;
+	width: 540px;
+
+}
+.wordbox{
+	position: absolute;
+	top: 260px;
+	left: 500px;
+	margin-left: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 20px;
+	font-size: 18px;
+
+}
+.wordbox p{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	color: #ffcc66;
+	border-bottom: 1px solid #e6e6e6;
+}
+.home,.goodteacher,.goodstudent{
+	position: absolute;
+	top: 10px;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.home:hover{
+	-webkit-transform: scale(1.1,1.1);
+	-ms-transform: scale(1.1,1.1);
+	-o-transform:scale(1.1,1.1) ;
+	transform: scale(1.1,1.1);
+}
+.goodteacher:hover{
+	-webkit-transform: scale(1.1,1.1);
+	-ms-transform: scale(1.1,1.1);
+	-o-transform:scale(1.1,1.1) ;
+	transform: scale(1.1,1.1);
+}
+.goodstudent:hover{
+	-webkit-transform: scale(1.1,1.1);
+	-ms-transform: scale(1.1,1.1);
+	-o-transform:scale(1.1,1.1) ;
+	transform: scale(1.1,1.1);
+}
+.home:hover a{
+	color: #7ecef1;
+}
+.goodstudent:hover a{
+	color: #7ecef1;
+}
+.goodteacher:hover a{
+	color: #7ecef1;
+}
+.home{
+	right: 360px;
+}
+.goodteacher{
+	right: 220px;
+}
+.goodstudent{
+	right: 80px;
+}
+.chinese{
+	display: block;
+	font-size: 27px;
+	margin-bottom: 10px;
+	color: #cccccc;
+}
+.english{
+	display:block;
+	font-size: 14px;
+	margin-bottom: 10px;
+	color: #cccccc;
+}
+.zan img{
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.zan img:hover,:link{
+	-webkit-transform: scale(1.1,1.1);
+	-ms-transform: scale(1.1,1.1);
+	-o-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);
+}
+.zan p{
+	display: inline-block;
+	font-size: 16px;
+	color: #f01400;
+	position: absolute;
+	left: 230px;
+	bottom: 35px;
+}
+.footbox{
+	position: relative;
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	background-color: #e7e7e7;
+	font-size: 14px;
+	color: #999999;
+}
+.danmu{
+	position: fixed;
+	top: 200px;
+	right: 40px;
+	cursor: pointer;
+	width: 25px;
+	height: 25px;
+	
+}
+.danmu .iconfont{
+	font-size:25px;
+	color: #cccccc;
+} 
+.danmu:hover .iconfont {
+	color: black;
+}
+
+.comimg{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border-radius: 10px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.danmuword{
+	position: absolute;
+	height: 25px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 30px;
+	padding-right: 20px;
+	font-size: 18px;
+	line-height: 25px;
+	background-color: #7ecef1;
+	border-radius: 10px;
+	color: white;
+	z-index: 99999;
+	right:0px;
+}
+.staffinfo{
+	margin: 20px 20px;
+}
+.staffinfo h1{
+	font-size: 20px;
+	color: #e7e7e7;
+	margin-bottom: 10px;
+	position: absolute;
+	line-height: 25px;
+	padding: 5px 10px;
+	cursor: pointer;
+	margin-left: 90px;
+}
+.staffinfo h1 span{
+	display: inline-block;
+	position: absolute;
+	top: 101%;
+	left: 0%;
+	height:3px;
+	width: 100%;
+	background-color: #e7e7e7; 
+}
+.staffinfo h1:hover{
+	color: #7ecef1;
+}
+.staffinfo h1:hover span{
+	background-color: #7ecef1; 
+}
+ .teacher .icon-shi{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 9;
+	color: #ffcc66;
+	font-size: 32px;
+}
+.keji .st1{
+	overflow: hidden;
+	height: 400px;
+}
+.yeya .st1{
+	overflow: hidden;
+	height: 400px;
+}
+.first{
+	margin:0 auto;
+	position: relative;
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+}
+.first img{
+	display: block;
+	margin-left:380px;
+}
+.first .year{
+	margin-left: 50px;
+}
+.first p{
+	float: left;
+	font-size: 25px;
+	color: #ffcc66;
+	font-style:italic;
+}
+.first span{
+	height: 1px;
+	width: 500px;
+	display: inline-block;
+	float: left;
+	margin: 16px 30px;
+	background: #cccccc;
+
+}
+body{
+	background: url('../../img/images/bg.png');
+
+}
+body .navbox{
+	background: #000;
+}
+.mynav li{
+	color: #fff;
+}
+.mynav li a{
+	color: #fff;
+}
+.stbox{
+	padding-bottom: 20px;
+}
+.stbox .student,.teacher{
+	margin-top: 38px;
+	position: relative;
+	width: 400px;
+	background-color: #FFF;
+	padding: 20px;
+	box-shadow: 0 0 5px 1px #ddd;
+}
+.stbox .student:hover{
+	background: url('../../img/images/overflow.png');
+
+}
+.stbox .teacher:hover{
+	background: url('../../img/images/overflow.png');
+}
+.teacher{
+	margin-left: 90px;
+}
+.student{
+	margin-left: 160px;
+}
+.teacher img{
+	
+	cursor: pointer;
+	
+}
+.student img{
+	cursor: pointer;
+	
+}
+
+.search-form .searchbutton{
+border-color: #fff;
+}
+.search-form .searchtext{
+border-color: #fff;
+}
+.stp{
+	position: absolute;
+	top: 22px;
+	left: 275px;
+	text-indent: 2em;
+	font-size: 16px;
+	color: black;
+}

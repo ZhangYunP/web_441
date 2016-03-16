@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<title>员工展示</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./img/css/staff.css">
+<link rel="stylesheet" href="./img/util/iconfont/iconfont.css">
+<link rel="stylesheet" href="./img/css/nav.css">
+
+</head>
+
+<body class="dowebok">
+<div id="navbox" class="navbox">
+			<div id="navbar" class="navbar">
+				<ul id="mynav" class="mynav clearfix">
+					<li class="navimg fl"><img src="./img/images/logo.png" alt="logo" width="20" height="20" class="navlogo"></li>
+					<li class="navtitle fl"><a href="./admin.php" >首页<span class="moveline"></span></a></li>
+					<li class="navsearchbox fl">
+						<form class="search-form" action="" method="get">
+							<span class="searchimg" id="searchimg"><img src="./img/images/search.png" alt="search"></span>
+	 						<input type="text" class="searchtext" name="q" id='searchtext' autocomplete="off"/>
+	 						<input type="submit" class="searchbutton" value="搜索" id='searchbutton'/>
+	 					</form>
+	 				</li>
+	 				<li class="classmenu fl" id="classmenu">
+	 					<a href="javascript:void(0)" class="classname" id="classname">选择分类<i class="iconfont icon-sanjiao"></i></a>
+	 					<ul class="nosub">
+	 						<li class="keji">科技部</li>
+	 						<li class="yeya">液压分公司</li>
+	 					</ul>
+	 				</li>
+	 				{if $people=="" && $staff==""}
+	 				<li class="navlogin fr"><a href="./tpl/reglogin/login.html">登录&nbsp;<i class="iconfont icon-user1"></i><span class="moveline"></span></a></li>
+	 				{elseif $people!=""}
+	 				<li class="navlogin fr"><a href="./admin.php?controller=home&method=mainp">{$people}&nbsp;<i class="iconfont icon-user1"></i><span class="moveline"></span></a></li>
+					{elseif $staff!=""}
+					<li class="navlogin fr"><a href="./admin.php?controller=home&method=mainst">{$staff}&nbsp;<i class="iconfont icon-user1"></i><span class="moveline"></span></a></li>
+					{/if}
+				</ul>
+			</div>
+		</div>
+		<div class="list">
+		<div class="kejibox">
+			<ul class="warpbox">
+			{foreach from=$col1  item=col}
+		<li data-scroll-reveal="enter top" class="innerbox"><div class="revalbox"><span class="font">
+			<img src={$col.images} alt="">
+		</span><span class="back"><span class="title">人物介绍</span><span class="name"><i class="iconfont "></i>{$col.name}</span><span class="contentbox"><span class="remark">{$col.content}</span></span></span></div></li>
+		{/foreach}
+	</ul>
+	<ul class="warpbox">	
+		{foreach from=$col2  item=col}
+		<li data-scroll-reveal="enter bottom" class="innerbox"><div class="revalbox"><span class="font">
+			<img src={$col.images} alt="">
+		</span><span class="back"><span class="title">人物介绍</span><span class="name"><i class="iconfont "></i>{$col.name}</span><span class="contentbox"><span class="remark">{$col.content}</span></span></span></div></li>
+		{/foreach}
+	
+	</ul>
+	<ul class="warpbox">
+		{foreach from=$col3  item=col}
+		<li data-scroll-reveal="enter top" class="innerbox"><div class="revalbox"><span class="font">
+			<img src={$col.images} alt="">
+		</span><span class="back"><span class="title">人物介绍</span><span class="name"><i class="iconfont "></i>{$col.name}</span><span class="contentbox"><span class="remark">{$col.content}</span></span></span></div></li>
+		{/foreach}
+	</ul>
+	<ul class="warpbox">
+		{foreach from=$col4 item=col}
+		<li data-scroll-reveal="enter bottom" class="innerbox"><div class="revalbox"><span class="font">
+			<img src={$col.images} alt="">
+		</span><span class="back"><span class="title">人物介绍</span><span class="name"><i class="iconfont "></i>{$col.name}</span><span class="contentbox"><span class="remark">{$col.content}</span></span></span></div></li>
+		{/foreach}
+	
+	</ul>
+		</div>
+	<div class="yeyabox" style="display:none">
+
+		<ul class="warpbox">
+			{foreach from=$col11  item=col}
+		<li data-scroll-reveal="enter top" class="innerbox"><div class="revalbox"><span class="font">
+			<img src={$col.images} alt="">
+		</span><span class="back"><span class="title">人物介绍</span><span class="name"><i class="iconfont "></i>{$col.name}</span><span class="contentbox"><span class="remark">{$col.content}</span></span></span></div></li>
+		{/foreach}
+		
+	</ul>
+	<ul class="warpbox">	
+			{foreach from=$col22  item=col}
+		<li data-scroll-reveal="enter bottom" class="innerbox"><div class="revalbox"><span class="font">
+			<img src={$col.images} alt="">
+		</span><span class="back"><span class="title">人物介绍</span><span class="name"><i class="iconfont "></i>{$col.name}</span><span class="contentbox"><span class="remark">{$col.content}</span></span></span></div></li>
+		{/foreach}
+	
+	</ul>
+	<ul class="warpbox">
+			{foreach from=$col33  item=col}
+		<li data-scroll-reveal="enter top" class="innerbox"><div class="revalbox"><span class="font">
+			<img src={$col.images} alt="">
+		</span><span class="back"><span class="title">人物介绍</span><span class="name"><i class="iconfont "></i>{$col.name}</span><span class="contentbox"><span class="remark">{$col.content}</span></span></span></div></li>
+		{/foreach}
+	
+	</ul>
+	<ul class="warpbox">
+			{foreach from=$col44  item=col}
+		<li data-scroll-reveal="enter bottom" class="innerbox"><div class="revalbox"><span class="font">
+			<img src={$col.images} alt="">
+		</span><span class="back"><span class="title">人物介绍</span><span class="name"><i class="iconfont "></i>{$col.name}</span><span class="contentbox"><span class="remark">{$col.content}</span></span></span></div></li>
+		{/foreach}
+	</ul>
+	</div>
+	</div>
+</div>
+<div class="pagestr" data-scroll-reveal="enter right, move 60px,over 1s, wait 0.3s">{$pagestr}</div>
+<div class="pagestr2" style="display:none">{$pagestr2}</div>
+<script src="./img/js/scrollReveal.js"></script> 
+<script src="./img/js/jquery-2.1.4.min.js"></script> 
+<script src="./img/js/staff.js"></script> 
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>找回密码</title>
+<link rel="stylesheet" type="text/css" href="../../img/css/reg.css" >
+	<link rel="stylesheet" type="text/css" href="../../img/css/nav.css" media="screen and (min-width:1080px)">
+	<link rel="stylesheet" type="text/css" href="../../img/css/navresponse.css" media="screen and (max-width:1080px)">
+	<link rel="stylesheet" type="text/css" href="../../img/util/iconfont/iconfont.css">
+	
+</head>
+<body>
+	 <div class="regpage">
+      	<div id="navbox" class="navbox">
+			<div id="navbar" class="navbar">
+				<ul id="mynav" class="mynav clearfix">
+					<li class="navimg fl"><img src="../../img/images/logo.png" alt="logo" width="20" height="20" class="navlogo"></li>
+					<li class="navtitle fl"><a href="../../admin.php" >首页<span class="moveline"></span></a></li>
+					<li class="navsearchbox fr">
+						<form class="search-form" action="" method="get">
+							<span class="searchimg" id="searchimg"><img src="../../img/images/search.png" alt="search"></span>
+	 						<input type="text" class="searchtext" name="q" autocomplete="off"/>
+	 						<input type="submit" class="searchbutton" value="搜索" />
+	 					</form>
+	 				</li>
+				</ul>
+			</div>
+		</div>
+		<div id="regbox" class="regbox">
+			<div id="reghead" class="reghead">
+				<h1>找&nbsp;回&nbsp;密&nbsp;码</h1>
+				<span class="headline"></span>
+			</div>
+			<div id="regcontent" class="regcontent">
+			<form action="MVC/admin.php?controller=rg&method=forget" method="post" class="regform" id="regform" onsubmit="return checkform()">
+				<div id="regname" class="regname">
+					<label for="name" class="name">姓名</label>&nbsp;<span id="star">*</span>
+					<br>
+					<input type="text" name="name" id="name" class="nameinput" placeholder="请输入你的姓名" onfocus="clearTips(1)" onblur="checkname()" autocomplete="off"></input><span class="inputicon"><i class="iconfont icon-user"></i></span>
+					<span id="nameclose"  class="ajaxtest" style="display:none;"><i class="iconfont icon-facecry"></i></span>
+					<p id="nametips" class="tips" ></p>
+				</div>
+				<div id="regsubmit" class="regsubmit">
+					<input type="submit" name="submit" class="submit" value="提&nbsp;&nbsp;&nbsp;&nbsp;交" >
+				</div>
+	
+			</form>
+
+			</div>
+		</div>
+      </div>
+		
+		<script type="text/javascript" src="../../img/js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../../img/js/forget.js"></script>
+</body>
+</html>

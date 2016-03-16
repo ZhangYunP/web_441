@@ -1,0 +1,62 @@
+/*初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body {  font-size:14px; font-family: '微软雅黑'}
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { text-decoration:none; color:#7ecef1;font-size:16px;}
+a:hover { text-decoration:none; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;}
+input:focus {
+    outline:none;
+} 
+/* css common */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+.fr{float: right;}
+.fl{float: left;}
+
+.display{
+	margin-bottom: 50px;
+	position: relative;
+}
+.ctitle{
+	font-size: 18px;
+	color: #7ecef1;
+}
+.ctotal{
+	float: right;
+	font-size: 16px;
+	color: #7ecef1;
+	margin-top: -22px;
+}
+.comment-box { padding: 10px 0; border-top: 1px solid #eee;}
+.comment-box:hover { background: rgb(247, 247, 247);}
+.comment-box .myhead { float: left; width: 30px; height: 30px; margin-right: 10px;}
+.comment-box .comment-content { float: left; width: 500px; }
+.comment-box .comment-content .comment-time { color: #ccc; margin-top: 3px; line-height: 16px; position: relative;}
+.comment-box .comment-content .comment-operate { display: none; color: #7ecef1; height: 20px;  position: absolute; bottom: 0px; right: 10px;font-size: 15px;}
+.comment-box .comment-content:hover .comment-operate { display: inline-block;}
+.text-box .comment { border: 1px solid #eee; display: block; height: 15px; width: 528px; padding: 5px; resize: none; color: #ccc}
+.text-box .btn { font-size: 12px; font-weight: bold; display: none; float: right; width: 65px; height: 25px; border: 0px solid #0C528D; color: white; background: #7ecef1;cursor: pointer;}
+.text-box .btn-off { border: 1px solid #ccc; color: #ccc; background: #F7F7F7;}
+.text-box .word{ display: none; float: right; margin: 7px 10px 0 0; color: #666;}
+.text-box-on .comment{ height: 50px; color: #333;}
+.text-box-on .btn{ display: inline;}
+.text-box-on .word{ display: inline;}
+.submit{
+	display: block;
+	width: 60px;
+	height: 25px;
+	background-color: #7ecef1;
+	font-size: 15px;
+	line-height: 25px;
+	margin: 0 auto;
+	color: white;
+	border:0px;
+	cursor: pointer;
+	margin-right: 100px;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>星级师徒</title>
+	<link rel="stylesheet" href="./img/css/nav.css">	
+	<link rel="stylesheet" href="./img/css/comment.css">	
+	<link rel="stylesheet" href="./img/css/student.css">	
+	<link rel="stylesheet" href="./img/css/adipoli.css">	
+	<link rel="stylesheet" type="text/css" href="./img/util/iconfont/iconfont.css">
+
+</head>
+<body>
+	<div id="navbox" class="navbox">
+			<div id="navbar" class="navbar">
+				<ul id="mynav" class="mynav clearfix">
+					<li class="navimg fl"><img src="./img/images/logo.png" alt="logo" width="20" height="20" class="navlogo"></li>
+					<li class="navtitle fl"><a href="./admin.php" >首页<span class="moveline"></span></a></li>
+					<li class="navsearchbox fl">
+						<form class="search-form" action="" method="get">
+							<span class="searchimg" id="searchimg"><img src="./img/images/search.png" alt="search"></span>
+	 						<input type="text" class="searchtext" name="q" autocomplete="off"/>
+	 						<input type="submit" class="searchbutton" value="搜索" />
+	 					</form>
+	 				</li>
+	 				<li class="navlogin fr"><a href="./admin.php?controller=home&method=mainst"><i class="iconfont icon-user1"></i>你好，{$staff}<span class="moveline"></span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="navbar2" id="navbar2">
+			<li class="home"><a class="chinese" href="javascript:void(0)">师徒集合</a><a class="english" href="javascript:void(0)">aggregate</a></li>
+			<li class="goodteacher"><a class="chinese" href="javascript:void(0)">优秀师傅</a><a class="english" href="javascript:void(0)">good teacher</a></li>
+			<li class="goodstudent" id="goodstudent"><a href="javascript:void(0)" class="chinese">最佳新人</a><a href="javascript:void(0)" class="english">good student</a></li>
+		</div>
+		<div class="mainbox aggregatecontent" >
+			<div class="staffinfo ">
+				<h1>科技部<span></span></h1>
+				<div class="stbox">
+					<div class="keji ">
+					<div class="st1">
+					<div class="teacher fl">
+						<i class="iconfont icon-shi"></i>
+						<img src="./img/images/staff/1.jpg" alt="" class="row4">
+						<span></span>
+						<p class="stp">张云，介绍</p>
+					</div>
+					<div class="student fl">
+						<img src="./img/images/staff/2.jpg" alt="" class="row4">
+						<span></span>
+						<p class="stp">小米，介绍</p>
+					</div>
+				</div>				
+				
+					</div>
+
+				</div>
+			</div>
+			<div class="staffinfo ">
+				<h1>液压分公司<span></span></h1>
+				<div class="stbox">
+					<div class="yeya">
+					<div class="st1">
+					<div class="teacher fl">
+						<i class="iconfont icon-shi"></i>
+						<img src="./img/images/staff/1.jpg" alt="" class="row4">
+						<span></span>
+						<p class="stp">张云，介绍</p>
+					</div>
+					<div class="student fl">
+						<img src="./img/images/staff/2.jpg" alt="" class="row4">
+						<span></span>
+						<p class="stp">小米，介绍</p>
+					</div>
+				</div>
+				
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="mainbox teachercontent" style="display:none;">
+			<div class="one">
+			<div class="first">
+				<img src="./img/images/sidai.png" alt="">
+				<div class="year">
+					<span></span>
+					<p>2014-2015</p>
+					<span></span>
+				</div>	
+			</div>
+				<div class="rank">
+			<div class="rankcontent">
+				<p class="name">{$tname}</p>
+				<span class="peopleimg"><img src="{$turl}" alt=""></span>
+				<span class="starimg"><img src="./img/images/star.png" alt=""><img src="./img/images/star.png" alt=""><img src="./img/images/star.png" alt=""><img src="./img/images/star.png" alt=""><img src="./img/images/star.png" alt=""></span>
+			</div>
+			<div class="zan">
+				<a href="javascript:void(0)" rel="{$tid}" title="赞"><img src="./img/images/favorites.png" alt=""></a>
+				<p><span>{$tlove}</span>个人觉得很赞</p>
+			</div>
+			</div>
+			<div class="wordbox">
+				<p>所带徒弟：<span>xxx</span></p>
+				<p>徒弟评价：<span>xxx</span></p>
+				</div>
+			</div>
+		
+			</div>
+		<div class="mainbox studentcontent" style="display:none">
+			<div class="one">
+			<div class="first">
+				<img src="./img/images/sidai.png" alt="">
+				<div class="year">
+					<span></span>
+					<p>2014-2015</p>
+					<span></span>
+				</div>	
+			</div>
+				<div class="rank">
+					<div class="rankcontent">
+				<p class="name">{$sname}</p>
+				<span class="peopleimg"><img src="{$surl}" alt=""></span>
+				<span class="starimg"><img src="./img/images/star.png" alt=""><img src="./img/images/star.png" alt=""><img src="./img/images/star.png" alt=""><img src="./img/images/star.png" alt=""><img src="./img/images/star.png" alt=""></span>
+			</div>
+			<div class="zan">
+				<a href="javascript:void(0)" rel="{$sid}" title="赞"><img src="./img/images/favorites.png" alt=""></a>
+				<p><span>{$slove}</span>个人觉得很赞</p>
+			</div>
+			</div>
+			<div class="wordbox">
+				<p>师傅评价：<span>xxx</span></p>
+				<p>领导评价：<span>xxx</span></p>
+				<p>自我评价：<span>xxx</span></p>
+			</div>
+			</div>
+			
+		</div>
+		<div class="danmu" title="弹幕">
+			<span><i class="iconfont icon-danmuguan"></i></span>
+		</div>
+
+		<div  class="display clearfix" id="list">
+		<p class="ctitle">评论</p>
+		<p class="ctotal">共<span></span>条</p>
+		  <div class="box clearfix">
+		<div class="comment-list">
+					{foreach from=$commentinfo item=comment}
+					 {if $comment.nickname==$staff}
+                       <div class="comment-box clearfix" user="self" id={$comment.id}>                             
+                                {else}
+					<div class="comment-box clearfix" user="other" id={$comment.id}>                                
+								{/if}
+                        <img class="myhead" src={$comment.images} alt=""/>
+                        <div class="comment-content">
+                            <p class="comment-text"><span class="user">{$comment.nickname}：</span>{$comment.content}。</p>
+                            <p class="comment-time">
+                                {$comment.ctime}
+                                {if $comment.nickname==$staff}
+                                  <a href="javascript:;" class="comment-operate">删除</a>                               
+                                {else}
+                                <a href="javascript:;" class="comment-operate">回复</a>
+                                {/if}
+                            </p>
+                        </div>
+                    </div>
+					{/foreach}
+                   
+                </div>                              
+                <div class="text-box">
+                    <textarea class="comment" autocomplete="off">评论…</textarea>
+                    <button class="btn ">回 复</button>
+                    <span class="word"><span class="length">0</span>/140</span>
+                </div>
+	</div>
+</div>
+		</div>
+		<div class="footbox" id="footbox">
+			<div class="copyright" id="copyright">
+				<span><em>©</em>2015 九江中船仪表有限责任公司 </span>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="./img/js/jquery-2.1.4.min.js"></script>
+		<script src="./img/js/jquery.adipoli.min.js"></script>
+		<script type="text/javascript" src="./img/js/student.js"></script>
+		<script src="./img/js/comment.js"></script>
+</body>
+</html>

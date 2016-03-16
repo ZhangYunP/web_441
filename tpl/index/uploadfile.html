@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>上传简历附件</title>
+	<link rel="stylesheet" href="../../img/css/uploadfile.css">
+	
+</head>
+<body >
+	<div id="cboxLoadedContent" style="width: 502px; overflow: auto; height: 243px;">
+
+	<div id="uploadFile" class="popup" id="popup">
+	    <table width="100%">
+	    	<tbody>
+	    	<tr>
+	        	<td align="center">
+	                <form action="../../admin.php?controller=index&method=uploadform" method="post" enctype="multipart/form-data" id="upform" target="upframe">
+	                    	<span class="up_text">选择上传文件</span>
+	                        <input type="file" name="file" id="upfile" class="up_input" onchange="handlefile()">
+	                        <input type="submit" name="submit" class="subbtn" value="提交">
+	                        
+	                </form>
+	            </td>
+	        </tr>
+	        <tr><div class="filename" id="filename">
+	        </div></tr>
+	    	<tr>
+	        	<td align="left"><span class="notice">支持word、pdf格式文件<br>文件大小需小于2M</span></td>
+	        </tr>
+	        <tr>
+	        	<td align="left" style="color:#dd4a38; padding-top:10px;">注：若从其它网站下载的word简历，请将文件另存为.doc格式后上传</td>
+	        </tr>
+	    </tbody></table>
+	</div>
+	<iframe id="upframe" name="upframe" src="" style="display:none;">
+   </iframe>
+	<div class="mes" id="mes"></div>
+	<div class="btn" id="btn">确定</div>
+	</div>
+	<div class="title" id="title"><span>上传简历附件</span><div class="cbtn" id="cboxClose"></div></div>
+	<script src="../../img/js/jquery-2.1.4.min.js"></script>
+	<script src="../../img/js/uploadfile.js"></script>
+
+	</body>
+</html>

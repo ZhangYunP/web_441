@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>load</title>
+	<link rel="stylesheet" href="../../img/css/load.css">
+	<link rel="stylesheet" type="text/css" href="../../img/util/iconfont/iconfont.css">
+</head>
+<body onload="load()" class="mainpage"> 
+	<div class="loadimg" id="loadimg"><img src="../../img/images/load1.gif" alt="load"></div>
+	<div class="main" id="main" style="display:none;">
+		<div id="video" class="video">
+			  <video autoplay loop muted=true poster="../../img/images/aima.jpg" id="bgvid">
+
+			  <source src="../../img/images/aima.webm" type="video/webm">
+
+			  <source src="../../img/images/aima.mp4" type="video/mp4">
+
+			</video>
+		</div>
+		<div class="funbtn" id="funbtn">
+			<span><i class="iconfont icon-siglyphsoundmute" id="soundmuted"></i></span>
+			<span><i class="iconfont icon-user2" id="usernum"></i><em>400</em></span>
+		</div>
+		<div class="company" id="company">
+			<h3 data-scroll-reveal="enter bottom, move 40px,over 1s, wait 0.5s" >九江中船仪表</h3>
+		</div>
+		<div class="wordcontent" id="wordcontent" >
+			<span class="navline" id="navline" ></span>
+			<h1 data-scroll-reveal="enter top, move 60px,over 1s, wait 0.7s">精益求精</h1>
+			<p data-scroll-reveal="enter right, move 80px, over 2s, wait 1s">一种完美主义</p>
+			<p data-scroll-reveal="enter left, move 80px, over 2s, wait 1.5s">追求极致的工匠精神</p>
+			<p data-scroll-reveal="enter right, move 80px, over 2s, wait 1.8s">我们为您提供优质的工作环境</p>
+			<p data-scroll-reveal="enter bottom, move 80px, over 2s, wait 1.8s">欢迎你的加入</p>
+		</div>
+		<div class="ghostbtn" id="ghostbtn" data-scroll-reveal="enter bottom, move 80px, over 2s, wait 2s">
+			 <a href="../../admin.php" class="button" >
+                <span class="line line-top"></span>
+                <span class="line line-left"></span>
+                <span class="line line-right"></span>
+                <span class="line line-bottom"></span>
+                点&nbsp;击&nbsp;进&nbsp;入
+            </a>
+		</div>
+	</div>
+	<script src="../../img/js/jquery-2.1.4.min.js"></script>
+	<script src="../../img/js/load.js"></script>
+	<script src="../../img/js/scrollReveal.js"></script>
+</body>
+</html>

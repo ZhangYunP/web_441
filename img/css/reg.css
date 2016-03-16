@@ -1,0 +1,363 @@
+/*初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body {  font-size:14px; font-family: '微软雅黑'}
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;}
+input:focus {
+    outline:none;
+} 
+/* css common */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+.fr{float: right;}
+.fl{float: left;}
+
+.regpage{
+	position: relative;
+	width: 100%;
+	
+}
+.regbox{
+    position: relative;
+	width: 330px;
+    padding: 10px;
+    margin-left: 10px;
+    }
+.regbox .reghead{
+	position: relative;
+}
+.regbox .reghead .helpicon{
+	display: inline-block;
+	position: absolute;
+	top: 13px;
+	right: 12px;
+	cursor: pointer;
+}
+.regbox .reghead .headline{
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: #b2ddf0;
+	margin-top: 10px;
+  	right: 0;
+}
+.reghead .tooltips{
+    position: absolute;
+    padding: 5px 14px;
+    height: 120px;
+    line-height: 16px;
+    background: #7ecef1;
+    color: #fff;
+    top: 55px;
+    right: 3px;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 5px;
+    opacity: 0.9;
+    z-index: 999
+}
+
+.tooltips span{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border: 7px solid transparent;
+    border-bottom-color: #7ecef1;
+    left: 90%;
+    margin-left: 10px;
+    top: -14px;
+}
+.regbox .reghead h1{
+	width: 100%;
+	height: 15%;
+	text-align: left;
+	line-height: 30px;
+	font-size: 30px;
+	color: #cccccc;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+.regbox .regcontent{
+	position: relative;
+	width: 100%;
+	height: 85%;
+	margin-top: 20px;
+
+}
+.inputicon .iconfont{
+	color: #cccccc;
+	position: relative;
+	left: -30px;
+	top: 0px;
+}
+.name,.pwd,.email,.vcode,.sex{
+	font-size: 16px;
+	color: rgba(0,0,0,0.7);
+	display: inline-block;
+	font-family:"微软雅黑"; 
+}
+.regsex {
+	font-size: 14px;
+	color: rgba(0,0,0,0.7);
+}
+ #star{
+	color: red;
+	display: inline-block;
+}
+.nameinput,.pwdinput,.pwd1input,.emailinput,.vcodeinput{
+
+	border: 1px solid rgb(204,204,204);
+	display: inline-block;
+	height: 35px;
+	width: 220px;
+	padding-left: 15px;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 14px;
+	font-family: "arial";
+} 
+
+.regbox .regcontent .regform .regname,.regpwd,.regpwd1,.regemail,.regvcode,.regsex{
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.tips{
+	color: red;
+	font-size: 13px;
+	height: 18px;
+}
+
+.regsubmit .submit{
+	display: inline-block;
+	width: 160px;
+	height: 35px;
+	border-radius: 5px;
+	margin-left: 15px;
+	font-size: 20px;
+    border: 0px solid transparent;
+	cursor: pointer;
+	background-color: #7ecef1;
+	color: white;
+
+}
+.vm{
+	display: inline-block;
+	position: relative;
+	top: -5px;
+	font-size: 14px;
+
+}
+.imagecode{
+	display: inline-block;
+	margin-top: 10px;
+}
+::-webkit-input-placeholder { 
+	font-family: 'Microsoft Yahei', Simsun;
+	font-size: 14px;
+	vertical-align: middle;
+　　}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-family: 'Microsoft Yahei', Simsun;
+    font-size: 14px;
+    vertical-align: middle;
+　　}
+::-ms-input-placeholder { /* Internet Explorer 10+ */
+	font-family: 'Microsoft Yahei', Simsun;
+	font-size: 14px;
+	vertical-align: middle;
+　　}
+
+
+.safeline{
+	height: 2px;
+}
+.safeclass1{
+	position: relative;
+	display: block;
+	height: 2px;
+	width: 0px;
+	background-color: transparent;
+	top: -2px;
+	left: 5px;
+}
+.safeclass{
+	position: relative;
+	display: block;
+	height: 2px;
+	width: 0px;
+	background-color: transparent;
+	top: -2px;
+	left: 5px;
+}
+
+.auto-show{
+	width: 232px;
+	border: 1px solid #7ecef1;
+	border-top: 0px solid transparent;
+	position: absolute;
+	left: 0px;
+	z-index: 999;
+	background: white;
+	font-size: 15px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	color: black;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "arial";
+}
+.agreebox{
+position: relative;
+margin-bottom: 40px;
+}
+#agcheck{
+	position: absolute;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	left: 5px;
+	top: -10px;
+	cursor: pointer;
+}
+#ag{
+	position: absolute;
+	left: 30px;
+	top: -10px;
+	color: black;
+	cursor: pointer;
+}
+.mask{
+	position: absolute;
+	z-index: 999;
+}
+.remberbox{
+	position: relative;
+	margin-bottom: 40px;
+}
+.agre{
+	position: absolute;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	top: -5px;
+	left: 2px;
+	border: 1px solid #999999;
+	cursor: pointer;
+}
+.remberbox .reword{
+	position: absolute;
+	left: 35px;
+	top: -5px;
+	color: black;
+}
+.remberbox:hover .agre{
+	border: 2px solid #7ecef1;
+}
+.forgetbox{
+	margin-top: 20px;
+	position: relative;
+	left: 200px;		
+}
+.forgetbox a{
+	color: black;
+}
+.forgetbox a:hover,:link{color:orange;}
+.regpwd .inputicon i{
+	cursor: pointer;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.regpwd .inputicon i:hover{
+
+	transform:scale(1.2,1.2) rotate(360deg);
+}
+.regpwd1 .inputicon i{
+	cursor: pointer;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.regpwd1 .inputicon i:hover{
+
+	transform:scale(1.2,1.2) rotate(360deg);
+	
+}
+#ag:hover,:link{color: orange;}
+.pwdtips{
+	position: absolute;
+    padding: 5px 14px;
+    height: 30px;
+    line-height: 16px;
+    background: #7ecef1;
+    color: #fff;
+    top: 50px;
+    left: -450px;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 5px;
+    opacity: 0;
+    z-index: 999;
+    -webkit-transition: all 0.4s ;
+    -o-transition: all 0.4s ;
+    transition: all 0.4s ;
+}
+.pwdtips span{
+	position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border: 7px solid transparent;
+    border-bottom-color: #7ecef1;
+    left: 90%;
+    top: -14px;
+}
+.forgetbox:hover .pwdtips{
+	left: -210px;
+	opacity: 0.9;
+}
+.alertmes{
+	position: relative;
+	top: 230px;
+	left:35%;
+	font-family:'楷体';	
+}
+.alertmes span{
+	font-size: 30px;
+	color: #999999;
+}
+.alertmes #link{
+	display: inline-block;
+	font-size: 25px;
+	color: #999999;
+	text-decoration: none;
+}
+.alertmes .timeword{
+	font-size: 25px;
+	color: #999999
+}
+.alertmes #link:hover{
+	text-decoration: underline;
+	color: orange;
+}
+.footbox{
+	position: relative;
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	background-color: #e7e7e7;
+	font-size: 14px;
+	color: #999999;
+}
