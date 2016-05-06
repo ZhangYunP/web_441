@@ -4,4 +4,5 @@
 	require_once('config.php');
 	require_once('framework/pc.php');
 	PC::run($config);
+	echo "hello world";
 ?>
